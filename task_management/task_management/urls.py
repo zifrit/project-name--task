@@ -22,7 +22,7 @@ urlpatterns = [
     # path('auth/', include('djoser.urls')),
     # path('auth/', include('djoser.urls.jwt')),
     path('drf_auth/', include('rest_framework.urls')),
-    path('my_tasks/', include('to_do_list.urls'))
+    path('', include('to_do_list.urls'))
 ]
 
 if settings.DEBUG:
