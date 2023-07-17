@@ -22,6 +22,7 @@ urlpatterns = [
     # path('auth/', include('djoser.urls')),
     # path('auth/', include('djoser.urls.jwt')),
     path('drf_auth/', include('rest_framework.urls')),
+    path('base/', include('django.contrib.auth.urls')),
     path('', include('to_do_list.urls'))
 ]
 

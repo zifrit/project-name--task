@@ -158,3 +158,11 @@ REST_FRAMEWORK = {
         'django_filters.rest_framework.DjangoFilterBackend'
     ]
 }
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_USE_TLS = False
+
+EMAIL_HOST_USER = 'mukhtar@radix-it.ru'
+EMAIL_HOST_PASSWORD = 'rnplgsqhxlhiqfci'
+DEFAULT_FROM_EMAIL = 'mukhtar@radix-it.ru'
