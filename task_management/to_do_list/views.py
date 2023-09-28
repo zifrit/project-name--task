@@ -29,9 +29,16 @@ class TaskViewSet(viewsets.ModelViewSet):
         'name'
     ]
 
+    def list(self, request, *args, **kwargs):
+        query = super(TaskViewSet, self).get_queryset()
+        print(query)
+        data = serializers.UserTaskSerializer(instance=query, many=True).data
+        return super(TaskViewSet, self).list(request, *args, **kwargs)
+
 
 class UserTask(generics.ListAPIView):
     serializer_class = serializers.UserTaskSerializer
 
     def get_queryset(self):
+        a, b = models.UserTask.objects.get_or_create(user_id=1, name='123', description='123')
         return models.UserTask.objects.filter(user=self.request.user, archive=False).select_related('user')

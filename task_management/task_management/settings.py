@@ -163,6 +163,6 @@ EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 EMAIL_USE_TLS = False
 
-EMAIL_HOST_USER = 'mukhtar@radix-it.ru'
-EMAIL_HOST_PASSWORD = 'rnplgsqhxlhiqfci'
-DEFAULT_FROM_EMAIL = 'mukhtar@radix-it.ru'
+EMAIL_HOST_USER = 'zifritlist@yandex.ru'
+EMAIL_HOST_PASSWORD = 'xebxxqzlbxtaiblm'
+DEFAULT_FROM_EMAIL = 'zifritlist@yandex.ru'
